@@ -1,0 +1,41 @@
+{
+  "name": "react-sharepoint",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@baristalabs/react-scripts-ts": "2.11.8",
+    "@pnp/common": "^1.2.3",
+    "@pnp/graph": "^1.2.3",
+    "@pnp/logging": "^1.2.3",
+    "@pnp/nodejs": "^1.2.3",
+    "@pnp/odata": "^1.2.3",
+    "@pnp/sp": "^1.2.3",
+    "ajv": "^6.5.4",
+    "gd-sprest": "^4.3.1",
+    "office-ui-fabric": "^2.6.3",
+    "office-ui-fabric-core": "^9.6.1",
+    "office-ui-fabric-js": "^1.5.0",
+    "office-ui-fabric-react": "^6.85.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "valuelink": "^1.5.5",
+    "webpack": "^3.12.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.5",
+    "@types/node": "^10.12.0",
+    "@types/react": "^16.4.18",
+    "@types/react-dom": "^16.0.9",
+    "request": "^2.88.0",
+    "typescript": "^2.9.2"
+  }
+}

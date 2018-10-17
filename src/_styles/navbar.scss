@@ -1,0 +1,54 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+$font-base: 'Open Sans', Arial, sans-serif;
+
+$blue-1: #009fc4;
+$blue-2: #0c7ead;
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+$sidebar-width: 200px;
+#sidebar {
+	background: #34393d;
+	float: left;
+	width: $sidebar-width;
+	min-height: 100vh;
+	
+	.sidebar__inboxes {
+		margin-top: 50px;
+		
+		.item-count {
+			background: #34393d;
+			border-radius: 5px;
+			float: right;
+			padding: 2px 8px;
+			margin: -2px -8px;
+		}
+		
+		li a {
+			color: #fff;
+			cursor: pointer;
+			display: block;
+			margin-bottom: 10px;
+			padding: 15px;
+			text-decoration: none;
+			width: 100%;
+			
+			&:hover {
+				background: #404549 !important;
+			}
+		}
+
+		li a:hover  {
+			background: #404549 !important;
+	  	}
+	  
+		.fa {
+			margin-right: 10px;
+		}
+	}
+
+	
+}
