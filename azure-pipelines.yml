@@ -29,7 +29,4 @@ steps:
   displayName: 'Archive files'
 
 - task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(System.DefaultWorkingDirectory)'
-    name: 'drop'
   displayName: 'Publish Build Artifacts'
