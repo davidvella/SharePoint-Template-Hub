@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './_styles/App.css';
 
-import { DetailsListDocumentsExample } from './Components/List/ListExample';
+import { DetailsListDocuments } from './Components/List/List';
 import { NavBar } from './Components/Navigation/navbar';
 import { DocumentPanel } from './Components/Panel/DocumentPanel';
 
@@ -36,7 +36,7 @@ class App extends React.Component<IAppStateProps, any> {
 				<div className="app-wrapper">
 					<NavBar />
 					<div className="list-view">
-						<DetailsListDocumentsExample onListItemSelection={this.onListItemSelection} />
+						<DetailsListDocuments onListItemSelection={this.onListItemSelection} />
 					</div>
 					<DocumentPanel itemName={this.state.itemName} showPanel={this.state.showPanel} hideDialog={true} />
 				</div>
