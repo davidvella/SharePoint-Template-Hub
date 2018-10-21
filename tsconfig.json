@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "build/dist",
+    "outDir": "./dist/",
     "module": "esnext",
     "target": "es5",
     "lib": [
@@ -29,6 +29,8 @@
     "webpack",
     "jest",
     "src/setupTests.ts",
-    "config"
+    "config",
+    "dist",
+    "webpack.config.js"
   ]
 }

@@ -5,12 +5,7 @@ import { DetailsListDocuments } from './Components/List/List';
 import { NavBar } from './Components/Navigation/navbar';
 import { DocumentPanel } from './Components/Panel/DocumentPanel';
 
-interface IAppStateProps extends React.Props<any> {
-	itemName: string;
-	showPanel: boolean;
-}
-
-class App extends React.Component<IAppStateProps, any> {
+class App extends React.Component<any, any> {
 	constructor(props: any) {
 		super(props);
 		this.state = {

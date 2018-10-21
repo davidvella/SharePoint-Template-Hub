@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Nav, INavProps} from 'office-ui-fabric-react/lib/Nav';
+import { Nav, INavProps } from 'office-ui-fabric-react/lib/Nav';
 
 export class NavBar extends React.Component<any, any> {
     constructor(props: INavProps) {
