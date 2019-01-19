@@ -9,6 +9,14 @@
 # production
 /build
 
+/dist
+
+/lib
+
+/sharepoint/solution
+
+/temp
+ 
 # misc
 .DS_Store
 .env.local

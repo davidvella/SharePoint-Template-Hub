@@ -1,65 +1,7 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-.ms-NavExample-LeftPane {
-  width: 208px;
-  box-sizing: border-box;
-  border-right: 1px solid #EEE;
-  overflow-y: auto;
-}
-.app-wrapper{
-  display:flex; 
-  flex-direction:row;
-  justify-content: flex-end;}
-
-.app-wrapper > .list-view
+.list
 {
-  flex: 1; 
+  overflow-y: auto;
+  max-height: 70vh;
 }
 
-.ms-Dialog-title{
-  color:#333;
-  font-size:28px;
-  font-weight:100;
-}
-
-.app-header{
-  margin-left:208px;
-}
-
-
-.info-pane-header{
-    color: rgb(51, 51, 51);
-    text-decoration: none solid rgb(51, 51, 51);
-    column-rule-color: rgb(51, 51, 51);
-    perspective-origin: 0px 0px;
-    transform-origin: 0px 0px;
-    caret-color: rgb(51, 51, 51);
-    border: 0px none rgb(51, 51, 51);
-    font: normal normal 400 normal 14px / normal "Segoe UI Regular WestEuropean", "Segoe UI", Tahoma, Arial, sans-serif;
-    outline: rgb(51, 51, 51) none 0px;
-}

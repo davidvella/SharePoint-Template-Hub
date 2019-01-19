@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "share-point-document-template-hub-extension-client-side-solution",
+    "id": "7d40727f-0124-4e08-9f8a-be1c0c24cf1a",
+    "version": "2.0.0.2",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "features": [
+      {
+        "title": "Application Extension - Deployment of custom action.",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "7e6ef5d2-d086-4e35-ad7c-aaddd392ed09",
+        "version": "2.0.0.2",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "clientsideinstance.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/share-point-document-template-hub-extension.sppkg"
+  }
+}

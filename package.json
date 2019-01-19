@@ -1,45 +1,45 @@
 {
-  "name": "react-sharepoint",
-  "version": "0.1.0",
+  "name": "share-point-document-template-hub-extension",
+  "version": "0.0.2",
   "private": true,
-  "dependencies": {
-    "@baristalabs/react-scripts-ts": "2.11.8",
-    "@pnp/common": "^1.2.3",
-    "@pnp/graph": "^1.2.3",
-    "@pnp/logging": "^1.2.3",
-    "@pnp/nodejs": "^1.2.3",
-    "@pnp/odata": "^1.2.3",
-    "@pnp/sp": "^1.2.3",
-    "ajv": "^6.5.4",
-    "gd-sprest": "^4.3.1",
-    "office-ui-fabric": "^2.6.3",
-    "office-ui-fabric-core": "^9.6.1",
-    "office-ui-fabric-js": "^1.5.0",
-    "office-ui-fabric-react": "^6.85.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-redux": "^5.0.7",
-    "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0",
-    "valuelink": "^1.5.5"
+  "engines": {
+    "node": ">=0.10.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
-    "clean": "rm -rf node_modules", 
-    "reinstall": "npm run clean && npm install", 
-    "rebuild": "npm run clean && npm install && npm run build"
+    "build-dev": "cross-env NODE_ENV=DEVELOPMENT gulp bundle && gulp package-solution",
+    "build": "cross-env NODE_ENV=DEVELOPMENT gulp bundle --ship && gulp package-solution --ship",
+    "clean": "gulp clean",
+    "test": "gulp test",
+    "serve": "cross-env NODE_ENV=DEVELOPMENT gulp serve"
+  },
+  "dependencies": {
+    "@davidvella/sharepoint-rest-react": "^0.2.6",
+    "@microsoft/decorators": "1.7.1",
+    "@microsoft/sp-core-library": "1.7.1",
+    "@microsoft/sp-listview-extensibility": "1.7.1",
+    "@pnp/sp": "^1.2.7",
+    "@types/es6-promise": "0.0.33",
+    "@types/node": "^10.12.18",
+    "@types/webpack-env": "1.13.1",
+    "office-ui-fabric-react": "^5.134.0",
+    "valuelink": "^1.5.5"
   },
   "devDependencies": {
-    "@types/jest": "^23.3.5",
-    "@types/node": "^10.12.0",
-    "@types/react": "^16.4.18",
-    "@types/react-dom": "^16.0.9",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "request": "^2.88.0",
-    "typescript": "^2.9.2",
-    "webpack": "^4.22.0",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.9"
+    "@microsoft/sp-build-web": "1.7.1",
+    "@microsoft/sp-dialog": "^1.7.1",
+    "@microsoft/sp-module-interfaces": "1.7.1",
+    "@microsoft/sp-tslint-rules": "1.7.1",
+    "@microsoft/sp-webpart-workbench": "1.7.1",
+    "@types/chai": "3.4.34",
+    "@types/mocha": "2.2.38",
+    "@types/prop-types": "^15.5.3",
+    "ajv": "~5.2.2",
+    "cross-env": "^5.2.0",
+    "gulp": "~3.9.1",
+    "sass-loader": "^7.1.0",
+    "spfx-uifabric-themes": "^0.6.0",
+    "style-loader": "^0.23.1",
+    "typescript": "^2.4.2",
+    "webpack-merge": "^4.1.5"
   }
 }
