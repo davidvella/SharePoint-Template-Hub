@@ -1,10 +1,10 @@
 /* tslint:disable */
 require("./navbar.module.css");
 const styles = {
-  sidebar: 'sidebar_87a6143b',
-  sidebar__inboxes: 'sidebar__inboxes_87a6143b',
-  itemCount: 'itemCount_87a6143b',
-  fa: 'fa_87a6143b',
+  sidebar: 'sidebar_fb38c636',
+  sidebar__inboxes: 'sidebar__inboxes_fb38c636',
+  itemCount: 'itemCount_fb38c636',
+  fa: 'fa_fb38c636',
 };
 
 export default styles;

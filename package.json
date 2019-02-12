@@ -1,6 +1,6 @@
 {
   "name": "share-point-document-template-hub-extension",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "private": true,
   "engines": {
     "node": ">=0.10.0"
@@ -13,7 +13,7 @@
     "serve": "cross-env NODE_ENV=DEVELOPMENT gulp serve"
   },
   "dependencies": {
-    "@davidvella/sharepoint-rest-react": "^0.2.6",
+    "@davidvella/sharepoint-rest-react": "^0.2.9",
     "@microsoft/decorators": "1.7.1",
     "@microsoft/sp-core-library": "1.7.1",
     "@microsoft/sp-listview-extensibility": "1.7.1",
