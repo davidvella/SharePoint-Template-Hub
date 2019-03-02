@@ -25,7 +25,7 @@ steps:
   displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
   inputs:
     SourceFolder: '$(system.defaultworkingdirectory)'
-    Contents: '**/sharepoint/**'
+    Contents: '**/sharepoint/solution/**'
     TargetFolder: '$(build.artifactstagingdirectory)'  
 
 # Create Archive : zip file
