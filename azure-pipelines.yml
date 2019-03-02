@@ -28,17 +28,7 @@ steps:
     Contents: '**/sharepoint/solution/**'
     TargetFolder: '$(build.artifactstagingdirectory)'  
 
-# Create Archive : zip file
-- task: ArchiveFiles@2
-  displayName: 'Archive $(build.artifactstagingdirectory)'
-  inputs:
-    rootFolderOrFile: '$(build.artifactstagingdirectory)'
-    includeRootFolder: true
-    archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
-    replaceExistingArchive: true
-
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
