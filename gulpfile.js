@@ -45,12 +45,14 @@ build
                 console.log('***********    Applying development settings to webpack *********************');
                 defineOptions = {
                     '_TemplateHubName_': JSON.stringify('Template Hub'),
+                    // Apply setting here
                     '_TemplateHubWebUrl_': JSON.stringify('https://occultum.sharepoint.com/sites/cthub2')
                 }
             } else {
                 // specify production keys here
                 defineOptions = {
-                    '_TemplateHubName_': JSON.stringify('https://your-real-api.com/')
+                    '_TemplateHubName_': JSON.stringify('Template Hub'),
+                    '_TemplateHubWebUrl_': JSON.stringify('https://your-url-here.com/')
                 }
             }
 

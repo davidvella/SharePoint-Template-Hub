@@ -8,10 +8,10 @@ Typescript 2.4.2
 ### Building the code
 
 ```bash
-git clone the repo
+git clone https://github.com/davidvella/SharePoint-Template-Hub.git
+cd SharePoint-Template-Hub/
 npm i
-npm i -g gulp
-gulp
+npm run build
 ```
 
 This package produces the following:
@@ -20,10 +20,3 @@ This package produces the following:
 * dist/* - the bundled script, along with other resources
 * deploy/* - all resources which should be uploaded to a CDN.
 
-### Build options
-
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
